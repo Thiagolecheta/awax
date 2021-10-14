@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat' , Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: #000;
+}
+
+.header {
+    max-width: 1140px;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logotipo {
+    width: 80px;
+    height: 80px;
+    background-color: #B28756;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    color: wheat;
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px #000 solid ;
+    font-size: 13px;
+
+}
+
+.menu li a:hover,
+.menu .active a{
+    border-bottom: 5px solid #B28756;
+    color: #ccc;
+}
+
+.banner {
+    height: calc(100vh - 100px);
+    background-color: rgb(82, 82, 82);
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slidearea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+.banner h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.banner h1 span {
+    color: #B28756;
+}
+
+.banner h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.banner .btn-slide {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    background-color: #B28756;
+    padding: 15px;
+    width: 200px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 25px;
+}
